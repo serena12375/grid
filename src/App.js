@@ -2,7 +2,9 @@
 import './App.css';
 import Button from '@material-ui/core/Button';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import EditTwoToneIcon from '@mui/icons-material/EditTwoTone';
+import Avatar from '@mui/material/Avatar';
+import iconEditHotspotContent from './assets/IconList/pencil.png';
+
 import Grid from '@material-ui/core/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -58,8 +60,13 @@ function App() {
       <ListItem alignItems="flex-start">
       <Button variant="contained"  style={{
                 background: '#4ecbef', color:'white', }}>
+                   
+                     <Avatar variant={"rounded"} alt="The image" src={iconEditHotspotContent} style={{
+    width: 25,
+    height: 25,
+  }} />
                      
-                     < EditTwoToneIcon  className="app" /> Edit Hotspot Content
+                 Edit Hotspot Content
                      </Button>  
       </ListItem>
 
